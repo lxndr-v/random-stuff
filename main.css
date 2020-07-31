@@ -1,11 +1,10 @@
-@font-face {
+@font-face{
   font-family: "Switzerland";
   src: url("./ttf/Switzerland.ttf");
+  
 }
-@font-face {
-  font-family: "Cyrene";
-  src: url("./ttf/Cyrene+Regular.otf");
-}
+@font-face{font-family: "Cyrene";
+  src: url("./ttf/Cyrene+Regular.otf")}
 * {
   padding: 0;
   margin: 0;
@@ -14,93 +13,117 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #b9b5ac;
-}
-
-.header {
   background-image: url(./img/background.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: -52px;
-  /* background: linear-gradient(#b4ada2, #b9b5ac); */
-  height: 2200px;
-  width: 100%;
+  background-position-y: 0px;
+
 }
+a {
+  text-decoration: none;
+  color: black;
+  text-shadow:0 0 10px blanchedalmond;
+}
+
 .nav-bar {
   display: block;
   align-items: center;
   position: sticky;
   top: 0;
   margin: auto;
-  width: 100%;
+  width: 960px; 
   height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #b9b5ac;
   z-index: 2;
-  font: bold 1.5rem "Cyrene";
+  font: bold 1.5rem "Cyrene"; 
   /* box-shadow: 0 0 30px black; */
+  backdrop-filter: blur(30px);
+
+  
 }
 
-.nav-menu a {
-  color: black;
-  text-decoration: none;
-  width: fit-content;
-}
-.nav-menu,
-.socials {
+.nav-menu{
+
   display: flex;
   flex-direction: row;
-  list-style: none;
+  width: 75%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
-.nav-menu a {
-  padding: 1.2em 2vmax;
-  white-space: nowrap;
+.nav-menu a{
+  padding: 40px 30px;
+ 
 }
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+
+}
+.socials a{
+  width: 50px;
+  height: 50px;
+  padding: 27px 10px;
+
+
+}
+
 .nav-menu a:hover {
-  background-color: #dedfe1;
+  background-color:#dedfe1;
   transition: 1s;
 }
-
-.socials a {
-  margin: 4%;
-  width: 2.2vw;
-  background-repeat: no-repeat;
-}
-
-#maps {
+#maps{
   content: url("./img/location.png");
 }
-#twitter {
+#maps:hover{
+  background-color: #34a853;
+}
+
+#twitter{
   content: url("./img/twitter.png");
-}
-#instagram {
-  content: url("./img/instagram.png");
-}
+  }
+
+  #twitter:hover{
+    background-color: #1da1f2;
+  }
+  #instagram{
+    content: url("./img/instagram.png");
+    }
+
+    #instagram:hover{
+      background-color: #d72e89;
+    }
 
 .title {
   margin: auto;
   width: 50%;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 75px;
+  text-shadow: 0 0 10px blanchedalmond;
 }
-.title :hover {
-  color: whitesmoke;
-  font-size: 9em;
-  transition: 1.5s cubic-bezier(0.43, 0.11, 0.43, 1.02);
+.title :hover{
+color: whitesmoke;
+font-size: 8em ;
+transition: 1.2s cubic-bezier(.43,.11,.43,1.02);
 }
-.title h1 {
-  transition: 1.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+.title h1{
+  transition: 1.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
-  transition-delay: 1.5s;
-  font: 8em "Switzerland";
+  transition-delay: 1s;
+  font: 7em "Switzerland";
 }
 .center {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
-  /* background-color: maroon; */
   background-image: url(./img/foreground.png);
   box-shadow: 0 0 30px black;
   min-height: 2037px;
@@ -108,9 +131,10 @@ body {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
-  margin: 367px auto -190px;
+  margin: 337px auto -190px;
   z-index: 1;
   transition: 1.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
 }
 .row-1 {
   height: 820px;
@@ -119,32 +143,36 @@ body {
 }
 .card {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 30px;
+  padding-top: 40px;
 }
 .card-title {
-  margin-top: 30px;
   height: 190px;
-  font: 3.7em "Cyrene";
+  font: 3.7em "Cyrene" ;
   color: whitesmoke;
 }
 .card-subtitle {
   height: 90px;
   font: 3.9em "Switzerland";
   color: whitesmoke;
+
 }
 .card-subtitle:hover {
-  color: black;
+  color:black;
+  text-shadow: 0 0 10px blanchedalmond;
 }
 .card-text {
-  display: inline-block;
-  height: 300px;
+  height: auto;
   max-height: 300px;
-  font: 1.3em sans-serif;
-  padding: 20px 20px 50px 20px;
-  margin: 10px;
+  font: 1.3rem sans-serif; 
+  padding: 20px;
+  margin: 20px;
+
 }
-.card a {
+.card a{
   float: none;
 }
 
@@ -160,6 +188,7 @@ body {
   text-align: right;
 }
 .review-card {
+  height: inherit;
   padding: 30px;
 }
 .rewiew-head {
@@ -167,22 +196,27 @@ body {
   font: 2.2em "Cyrene", sans-serif;
 }
 .rewiew-text {
+  text-align: right;
+  padding-left: 20px;
+  margin: 5px;
+  height: auto;
+  max-height: inherit;
   font: 1.3em sans-serif;
-  padding-left: 50px;
+ 
 }
 .readmore-btn {
   color: black;
   text-decoration: none;
-  font: 1.7em sans-serif;
+  font: 1.7em sans-serif ;
   width: fit-content;
   float: right;
-  margin: 2vmax 0 2vmax;
+  margin: 10px 0 20px;
   padding: 15px;
-  background-color: #dedfe1;
+  background-color:#dedfe1;
 }
 .readmore-btn:hover {
-  color: whitesmoke;
-  background-color: black;
+color: whitesmoke;
+background-color: black;
 }
 .col-2 {
   padding: 30px;
@@ -201,70 +235,73 @@ body {
   font: 1.2em sans-serif;
 }
 .footter {
+  margin-top: 1900px;
   height: 600px auto;
   width: 100%;
   background-color: #3a2815;
   text-align: center;
   display: grid;
+
 }
-.submit-form {
+.submit-form{
   margin-top: 11em;
   margin-bottom: 5em;
 }
-.submit-form h2 {
+.submit-form h2{
   color: whitesmoke;
-  font: 2.8em "Cyrene", sans-serif;
+  font: 2.8em "Cyrene", sans-serif ;
   margin: 0.7em;
   align-self: right;
 }
-form {
+form{
   margin: auto;
 }
-.form-grid {
-  display: grid;
+.form-grid{
+  display:grid;
   grid-template-columns: 5fr 7fr;
   margin: auto;
   width: 960px;
   height: auto;
 }
-.form-grid input,
-textarea {
+.form-grid input, textarea{
   height: 7.3rem;
   margin: 10px;
   padding-left: 20px;
   border-style: none;
-  background-color: #7b6746;
+  background-color:  #7b6746;
   border-radius: 5px;
   color: black;
-  font: 1.2em sans-serif;
+  font: 1.2em sans-serif ;
 }
-textarea {
+textarea{
   resize: vertical;
   padding-top: 15px;
+
 }
-.form-contacts {
+.form-contacts{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.form-contacts input {
+.form-contacts input{
   height: 3rem;
+  
 }
-.submit-btn {
+.submit-btn{ 
   border-style: none;
   color: black;
   text-decoration: none;
-  font: 1.7em sans-serif;
+  font: 1.7em sans-serif ;
   width: fit-content;
   margin: 20px;
   padding: 15px;
-  background-color: #dedfe1;
+  background-color:#dedfe1;
   border-radius: 4px;
 }
-.contacts {
+.contacts{
   margin: 3em;
 }
-.contacts span {
+.contacts span{
   margin: 0.7em;
   color: aliceblue;
-  font: 1.3em sans-serif;
+  font: 1.3em sans-serif ;
 }

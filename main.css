@@ -1,11 +1,10 @@
-@font-face {
+@font-face{
   font-family: "Switzerland";
   src: url("./ttf/Switzerland.ttf");
+  
 }
-@font-face {
-  font-family: "Cyrene";
-  src: url("./ttf/Cyrene+Regular.otf");
-}
+@font-face{font-family: "Cyrene";
+  src: url("./ttf/Cyrene+Regular.otf")}
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #b9b5ac;
+
 }
 
 .header {
@@ -38,11 +38,11 @@ body {
   justify-content: center;
   background-color: #b9b5ac;
   z-index: 2;
-  font: bold 1.5rem "Cyrene";
+  font: bold 1.5rem "Cyrene"; 
   /* box-shadow: 0 0 30px black; */
 }
 
-.nav-menu a {
+.nav-menu a{
   color: black;
   text-decoration: none;
   width: fit-content;
@@ -53,30 +53,32 @@ body {
   flex-direction: row;
   list-style: none;
 }
-.nav-menu a {
+.nav-menu a{
   padding: 1.2em 2vmax;
   white-space: nowrap;
+  
 }
 .nav-menu a:hover {
-  background-color: #dedfe1;
+  background-color:#dedfe1;
   transition: 1s;
 }
 
-.socials a {
+.socials a{
   margin: 4%;
   width: 2.2vw;
   background-repeat: no-repeat;
 }
 
-#maps {
+#maps{
   content: url("./img/location.png");
+
 }
-#twitter {
+#twitter{
   content: url("./img/twitter.png");
-}
-#instagram {
-  content: url("./img/instagram.png");
-}
+  }
+  #instagram{
+    content: url("./img/instagram.png");
+    }
 
 .title {
   margin: auto;
@@ -84,12 +86,12 @@ body {
   text-align: center;
   padding-top: 6em;
 }
-.title :hover {
-  color: whitesmoke;
-  font-size: 9em;
-  transition: 1.5s cubic-bezier(0.43, 0.11, 0.43, 1.02);
+.title :hover{
+color: whitesmoke;
+font-size: 9vw ;
+transition: 1.5s cubic-bezier(.43,.11,.43,1.02);
 }
-.title h1 {
+.title h1{
   transition: 1.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
   transition-delay: 1.5s;
@@ -111,6 +113,7 @@ body {
   margin: 367px auto -190px;
   z-index: 1;
   transition: 1.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
 }
 .row-1 {
   height: 820px;
@@ -125,16 +128,17 @@ body {
 .card-title {
   margin-top: 30px;
   height: 190px;
-  font: 3.7em "Cyrene";
+  font: 3.7em "Cyrene" ;
   color: whitesmoke;
 }
 .card-subtitle {
   height: 90px;
   font: 3.9em "Switzerland";
   color: whitesmoke;
+
 }
 .card-subtitle:hover {
-  color: black;
+  color:black;
 }
 .card-text {
   display: inline-block;
@@ -144,7 +148,7 @@ body {
   padding: 20px 20px 50px 20px;
   margin: 10px;
 }
-.card a {
+.card a{
   float: none;
 }
 
@@ -173,16 +177,16 @@ body {
 .readmore-btn {
   color: black;
   text-decoration: none;
-  font: 1.7em sans-serif;
+  font: 1.7em sans-serif ;
   width: fit-content;
   float: right;
   margin: 2vmax 0 2vmax;
   padding: 15px;
-  background-color: #dedfe1;
+  background-color:#dedfe1;
 }
 .readmore-btn:hover {
-  color: whitesmoke;
-  background-color: black;
+color: whitesmoke;
+background-color: black;
 }
 .col-2 {
   padding: 30px;
@@ -206,65 +210,67 @@ body {
   background-color: #3a2815;
   text-align: center;
   display: grid;
+
 }
-.submit-form {
+.submit-form{
   margin-top: 11em;
   margin-bottom: 5em;
 }
-.submit-form h2 {
+.submit-form h2{
   color: whitesmoke;
-  font: 2.8em "Cyrene", sans-serif;
+  font: 2.8em "Cyrene", sans-serif ;
   margin: 0.7em;
   align-self: right;
 }
-form {
+form{
   margin: auto;
 }
-.form-grid {
-  display: grid;
+.form-grid{
+  display:grid;
   grid-template-columns: 5fr 7fr;
   margin: auto;
   width: 960px;
   height: auto;
 }
-.form-grid input,
-textarea {
+.form-grid input, textarea{
   height: 7.3rem;
   margin: 10px;
   padding-left: 20px;
   border-style: none;
-  background-color: #7b6746;
+  background-color:  #7b6746;
   border-radius: 5px;
   color: black;
-  font: 1.2em sans-serif;
+  font: 1.2em sans-serif ;
 }
-textarea {
+textarea{
   resize: vertical;
   padding-top: 15px;
+
 }
-.form-contacts {
+.form-contacts{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.form-contacts input {
+.form-contacts input{
   height: 3rem;
+  
 }
-.submit-btn {
+.submit-btn{ 
   border-style: none;
   color: black;
   text-decoration: none;
-  font: 1.7em sans-serif;
+  font: 1.7em sans-serif ;
   width: fit-content;
   margin: 20px;
   padding: 15px;
-  background-color: #dedfe1;
+  background-color:#dedfe1;
   border-radius: 4px;
 }
-.contacts {
+.contacts{
   margin: 3em;
 }
-.contacts span {
+.contacts span{
   margin: 0.7em;
   color: aliceblue;
-  font: 1.3em sans-serif;
+  font: 1.3em sans-serif ;
 }
